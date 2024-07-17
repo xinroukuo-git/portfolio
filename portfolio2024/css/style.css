@@ -1,0 +1,448 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* *{
+	outline: 1px solid black;
+} */
+body{
+  padding: 0px 12px;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.container{
+	font-family: 'Noto Sans TC',sans-serif;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0px;
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	h5{
+		font-weight: bold;
+		margin-bottom: 0px;
+	}
+	.material-symbols-outlined{
+		display: none;
+	}
+} 
+.menu{
+	display: flex;
+	justify-content: flex-end;
+	gap: 36px;
+	a{
+		align-items: center;
+		color: rgb(93, 93, 93);
+		text-decoration: none;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 12px 24px;
+	}
+	a:hover{
+		color: black;
+	}
+} 
+
+.overlay{
+	display: none;
+	background-color: #ffffff;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	.content_overlay{
+		position: relative;
+		margin: 0 auto;
+		margin-top: 90px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		gap: 36px;
+	}
+	a{
+		text-decoration: none;
+		font-size: 18px;
+		color: rgb(93, 93, 93);
+	}
+	a:hover{
+		color: black;
+	}
+	.material-symbols-outlined{
+		position: absolute;
+		right: 20px;
+		top: 40px;
+		z-index: 2;
+		scale: 1.5;
+	}
+}
+
+.title{
+	margin-bottom: 24px;
+	.ux_title{
+		margin-right: 12px;
+	}
+	h2{
+		font-weight: bold;
+	}
+	h1{
+		font-weight: bold;
+		font-size: 64px;
+		display: inline;
+	}
+	p{
+		color: #828282;
+	}
+}
+.project_group{
+	display: flex;
+	gap: 24px;
+	margin-top: 60px;
+	.project{
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	h4{
+		font-size: 18px;
+		padding: 12px 0px;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+	}
+	img{
+		border: 1px solid #dddddd;
+		border-radius: 8px;
+		max-width: 100%;
+	}
+}
+.content{
+	max-width: 80%;
+	margin: 0 auto;
+	font-family: 'Poppins';
+	h1{
+		padding: 20px 0px;
+		font-weight: bold;
+		color: #3366FF;
+	}
+	.ux_overview{
+		display: flex;
+		gap: 12px;
+		.content_section{
+			max-width: 50%;
+		}
+	}
+	.ux_painpoints{
+		display: flex;
+		gap: 12px;
+		.content_section{
+			max-width: 25%;
+		}
+	}
+	.ux_persona{
+		display: flex;
+		align-items: center;
+		.persona_left{
+			max-width: 30%;
+			text-align: center;
+			gap: 12px;
+			img{
+				padding: 12px;
+			}
+			p{
+				line-height: 100%;
+			}
+		}
+		.persona_right{
+			max-width: 70%;
+			display: grid;
+			gap: 24px;
+			.right_description{
+				display: flex;
+				justify-content: space-between;
+				.content_section{
+					max-width: 50%;
+				}
+			}
+		}
+	}
+	.ux_journey{
+		.res_table{
+			overflow-x: auto;
+		}
+		th{
+			border-bottom: 5px solid white;
+			border-right: 5px solid white;
+			padding: 12px;
+			background-color: #EAEFFF;
+			width: 200px;
+		}
+		tr{
+			.col{
+				background-color: #3366FF;
+				color: #ffffff;
+				text-align: center;
+			}
+		}
+	}
+	.ux_wireframe{
+		display: flex;
+		img{
+			max-width: 80%;
+		}
+		h5{
+			font-size: 12px;
+			font-weight: bold;
+			padding: 12px;
+		}
+		.content_section{
+			text-align: center;
+		}
+	}
+	
+}
+.project_content{
+	max-width: 80%;
+	margin: 0 auto;
+	h1{
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		text-align: center;
+		padding: 100px 0px 30px;
+	}
+	p{
+		font-size: 48px;
+		font-weight: 900;
+		text-align: center;
+	}
+	.project_wireframes{
+		display: flex;
+		justify-content: space-between;
+		.wireframe_section{
+			img{
+				max-width: 80%;
+			}
+			text-align: center;
+			h5{
+				padding: 20px;
+				font-weight: bold;
+			}
+		}
+	}
+}
+.visualdesign{
+	.vd_project{
+		display: flex;
+		align-items: center;
+		img{ 
+			max-width: 50%;
+			padding: 40px;
+		}
+		h2{
+			font-weight: bold;
+		}
+
+	}
+}
+.intro{
+	display: flex;
+	justify-content: space-between;
+	h2{
+		font-weight: bold;
+		display: inline;
+	}
+	.left{
+		max-width: 50%;
+		display: grid;
+	}
+	.right{
+		max-width: 40%;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 48px;
+		h4{
+			font-weight: bold;
+		}
+		.profile{
+			text-align: center;
+			img{
+				border-radius: 50%;
+				padding: 20px;
+			}
+		}
+	}
+}
+.info_group{
+	margin-top: 80px;
+	.info{
+		h2{
+			font-weight: bold;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+		padding: 20px;
+		gap: 20px;
+	}
+}
+@media (max-width:768px){
+	.title{
+		text-align: center;
+		h1{
+			font-size: 48px;
+		}
+
+	}
+	.intro{
+		flex-direction: column-reverse;
+		gap: 24px;
+		.left{
+			max-width: 90%;
+			margin: 0 auto;
+		}
+		.right{
+			max-width: 80%;
+			margin: 0 auto;
+		}
+	}
+	.menu{
+		display: none;
+	}
+	.header {
+		align-items: center;
+		.material-symbols-outlined{
+			display: flex;
+			scale: 1.5;
+		}
+
+	}
+	.project_group{
+		flex-direction:column;
+		.project{
+			max-width: 100%;
+		}
+	}
+	.content{
+		max-width: 100%;
+		.ux_overview,.ux_painpoints{
+			flex-direction: column;
+			.content_section{
+				max-width: 90%;
+			}
+		}
+		.ux_persona{
+			flex-direction: column;
+			.persona_left{
+				max-width: 90%;
+			}
+			.persona_right{
+				max-width: 90%;
+				p{
+					text-align: center;
+				}
+				.right_description{
+					flex-direction: column;
+					.content_section{
+						max-width: 90%;
+					}
+				}
+			}
+		}
+		.ux_wireframe{
+			flex-direction: column;
+			h5{
+				font-size: 16px;
+			}
+		}
+	}
+	.project_content{
+		max-width: 100%;
+		h1{
+			font-size: 24px;
+		}
+		p{
+			font-size: 24px;
+		}
+		.project_wireframes{
+			flex-direction: column;
+			max-width: 70%;
+			margin: 0 auto;
+		}
+	}
+	.info_group{
+		margin-top: 20px;
+		.info{
+			img{
+				max-width: 10%;
+			}
+		}
+		
+	}
+	.visualdesign{
+		.vd_project{
+			flex-direction: column;
+			text-align: center;
+			img{ 
+				max-width: 100%;
+				padding: 20px;
+			}
+		}
+	}
+}

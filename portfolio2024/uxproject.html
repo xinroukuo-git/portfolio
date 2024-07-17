@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XIN ROU KUO Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> 
+    <link href='https://fonts.googleapis.com/css?family=Readex Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <div class="container"> 
+        <div class="header">
+            <a href="index.html"><h5>Fran Kuo</h5></a>
+            <ul class="menu">
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <span class="material-symbols-outlined" onclick="openNav()">menu</span>
+        </div>
+        <div id="nav_overlay" class="overlay">
+            <span class="material-symbols-outlined" onclick="closeNav()">close</span>
+            <div class="content_overlay">
+                <a href="index.html">Projects</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="title">
+            <h1 style="font-family:'Readex Pro';">Grocerteria</h1>
+            <p>Groceries-located APP case study</p>
+        </div>
+    <div class="content">
+            <h1>Project Overview</h1>
+            <div class="ux_overview">
+                <div class="content_section">
+                    <h3>Problem</h3>
+                    <p>Users who need a easy way to find products when they shop the grocery in person.</p>
+                </div>
+                <div class="content_section">
+                    <h3>Goal</h3>
+                    <p>Design an app will let users find products in grocery which will affect users who needs to shop the grocery in person.</p>
+                </div>
+            </div>
+            <h1>User Research</h1>
+            <p>I Conducted user research by understanding users’ needs and frustrations with emphasize exercize, further creating persona for a group of potential users, organizing their pain points and mapping their journey of shopping local grocery in person.</p>
+            <h1>Pain Points</h1>
+        <div class="ux_painpoints">
+            <div class="content_section">
+                <h3>Disabilities</h3>
+                <p>Visual impairment and dyslexia</p>
+            </div>
+            <div class="content_section">
+                <h3>Health</h3>
+                <p>Prepare meals for family in person</p>
+            </div>
+            <div class="content_section">
+                <h3>Budget</h3>
+                <p>Save money on food and transportation</p>
+            </div>
+            <div class="content_section">
+                <h3>Time</h3>
+                <p>Under busy and unpredictable work shifts</p>
+            </div>
+        </div>
+        <h1>Persona</h1>
+    <div class="ux_persona">
+        <div class="persona_left">
+            <img src="img/Fresh Folk Avatar.png" alt="">
+            <h3>Reena</h3>
+        <div class="">
+            <p>Age：36</p>
+            <p>Education：College</p>
+            <p>Hometown：Taipei</p>
+            <p>Family：Often live alone</p>
+            <p>Occupation：Paramedic</p>
+        </div>
+        </div>
+        <div class="persona_right">
+            <p style="font-weight: bold; text-align: center;">“Shopping in person is the most happiest thing except when something hard to find  ”</p>
+            <div class="right_description">
+                <div class="content_section">
+                    <h3 style="color: #196702;">Goals</h3>
+                    <li>Easy to find products when shopping grocery in person</li>
+                    <li>Buy both healthy and cost-effective products </li>
+                    </div>
+                <div class="content_section">
+                    <h3 style="color: #C5221F;">Frustrations</h3>
+                    <li>Dyslexia, hard to read text quickly</li>
+                    <li>Conscious about health and budget</li>
+                </div>
+            </div>
+            <p class="bio">Reena is a paramedic who lives in Taipei. She often lives alone but shares custody of her daughter with her ex-partner. Because Reena needs to prepare meals for her daughter, she takes much time shop grocery to buy ingredients. She desires a good service to help her find products in grocery when shopping in person.</p>
+        </div>
+    </div>
+        <h1>User Journey Map</h1>
+    <div class="ux_journey">
+        <h3>Persona：Reena</h3>
+        <p>Goal：Find products when shopping grocery in person</p>
+        <div class="res_table">
+        <table>
+            <tr>
+                <th class="col">ACTION</th>
+                <th>Arrive at grocery</th>
+                <th>Shop in grocery</th>
+                <th>Find what to buy</th>
+                <th>Check out the shopping cart</th>
+            </tr>
+            <tr>
+                <th class="col">TASK LIST</th>
+                <th>A. Get a shopping cart<br>B. Enter the grocery</th>
+                <th>A. Wander in the grocery <br>B. View the others’ shopping cart</th>
+                <th>A. Find products on the shelves<br>B. Check the details of products <br>C. Put the products  into shopping cart</th>
+                <th>A. Line up for checking out <br>B. Package the groceries and back home</th>
+            </tr>
+            <tr>
+                <th class="col">FEELING ADJECTIVE</th>
+                <th><li>Expected</li><li>Glad</li></th>
+                <th><li>Confused</li><li>Overwhelmed</li></th>
+                <th><li>Complicated</li></th>
+                <th><li>Tired</li></th>
+            </tr>
+            <tr>
+                <th class="col">IMPROVEMENT OPPORTUNITIES</th>
+                <th></th>
+                <th><li>Shopping list</li><li>Locate products service</li></th>
+                <th><li>Price comparison</li><li>Font size of nutrition facts</li></th>
+                <th></th>
+            </tr>
+        </table>
+        </div>
+    </div>
+        <h1>Wireframes</h1>
+        <div class="ux_wireframe">
+            <div class="content_section">
+                <img src="img/ux_Homepage.png" alt="">
+                <h5>Homepage</h5>
+            </div>
+            <div class="content_section">
+                <img src="img/ux_hopping List.png" alt="">
+                <h5>Shopping List</h5>
+            </div>
+            <div class="content_section">
+                <img src="img/Layout Map 1.png" alt="">
+                <h5>Layout Map</h5>
+            </div>
+            <div class="content_section">
+                <img src="img/ux_All Products.png" alt="">
+                <h5>Product Categories</h5>
+            </div>
+            <div class="content_section">
+                <img src="img/ux_Price Comparison.png" alt="">
+                <h5>Price Comparison</h5>
+            </div>
+            <div class="content_section"> 
+                <img src="img/ux_Product Details.png" alt="">
+                <h5>Product Details</h5>
+            </div>
+        </div>
+    <h1>Design System</h1>
+    <div class="ux_system">
+       
+    </div>
+   
+
+</div>
+        
+    <div class="footer">
+    </div>
+    </div>
+    <script src="js/script.js">
+    </script> 
+</body>
+</html>
